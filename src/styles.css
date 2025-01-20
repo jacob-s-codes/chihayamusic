@@ -1,0 +1,20 @@
+.nunito-sans-class {
+    font-family: "Nunito Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
+  }
+
+  html {
+    overflow-x: hidden;
+  }
+
+  .landingpage {
+    background-image: url('../img/Musicimg1.png');
+    background-size: fit;
+    background-blend-mode: multiply;
+    background-color: rgb(111, 108, 108);
+  }

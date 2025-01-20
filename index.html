@@ -1,34 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chihaya Music</title>
     <link rel="stylesheet" href="./src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles.css">
 </head>
-<body class="text-white w-full h-full">
+
+<body class="text-white w-full h-full nunito-sans-class">
     <!-- Navbar -->
-    <div class="sticky py-4 bg-primary ">
-        <ul class="flex flex-row items-center justify-between text-4xl navbar w-full max-w-[1800px] mx-auto">
-            <li>Chihaya Music</li>
-            <div class="flex flex-row items-center justify-normal gap-x-24">
-                <li>About</li>
-                <li>Contact</li>
+    <div class="w-screen h-screen flex flex-col">
+        <div class="z-50 sticky top-0 py-4 bg-primary">
+            <ul class="flex flex-row items-center justify-between navbar w-full max-w-[1800px] mx-auto relative">
+                <li class="ml-12 text-4xl">Chihaya Music</li>
+                <div class="flex flex-row items-center justify-normal gap-x-64 text-3xl">
+                    <a href="#about"><li>About</li></a>
+                    <li class="mr-12">Contact</li>
+                </div>
+            </ul>
+        </div>
+        <div class="landingpage flex-1">
+            <div class="flex flex-col text-center items-center justify-center h-full">
+                <h1 class="text-8xl font-bold">Chihaya Music</h1>
+                <ul class="mt-24 text-center text-3xl flex flex-row gap-x-24 font-semibold">
+                    <h2>Music producer</h2>
+                    <h2>|</h2>
+                    <h2>Artist</h2>
+                    <h2>|</h2>
+                    <h2>Composer</h2>
+                </ul>
             </div>
-        </ul>
+        </div>
     </div>
 
-    <p class="mt-[90vh]">space</p>
-    <script>
-        // Navbar
-        const navbar = document.querySelector('.navbar');
-        window.onscroll = () => {
-            if (window.scrollY > 100) {
-                navbar.classList.add('bg-primary');
-            } else {
-                navbar.classList.remove('bg-primary');
-            }
-        }
-    </script>
+
+    <div id="about" class="w-full max-w-[1800px] mx-auto mt-24">
+        <div class="flex flex-row gap-x-24 items-center justify-between text-black">
+            <div class="flex flex-col items-start ml-12">
+                <h1 class="text-5xl font-bold">About</h1>
+                <p class="text-2xl mt-24 max-w-3xl">I am a music producer with a passion for creating unique compositions across a variety of genres. My work is driven by a mix of personal interests and those from my community. In addition to producing music, I have a foundation in composition to my work, allowing me to produce scores for films, video games, and other visual media. I believe in blending the demands of both traditional and contemporary music production in my projects. </p>
+            </div>
+            <div class="w-full mr-12">
+                <img src="./img/musicimg2.png" alt="" class="rounded-md shadow-2xl shadow-black ">
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-[50vh]">
+        space
+    </div>
+
+
 </body>
+
 </html>
