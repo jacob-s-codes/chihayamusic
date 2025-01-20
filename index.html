@@ -3,12 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chihaya Music</title>
     <link rel="stylesheet" href="./src/output.css">
 </head>
-<body>
-    <div class="text-center">
-        Hello!
+<body class="text-white w-full ">
+    <!-- Navbar -->
+    <div class="sticky py-4 bg-primary navbar flex justify-center max-w-[1800px] mx-auto">
+        <ul class="flex flex-row items-center justify-between text-4xl ">
+            <li>Chihaya Music</li>
+            <div class="flex flex-row items-center justify-normal gap-x-24">
+                <li>About</li>
+                <li>Contact</li>
+            </div>
+        </ul>
     </div>
+
+    <p class="mt-[90vh]">space</p>
+    <script>
+        // Navbar
+        const navbar = document.querySelector('.navbar');
+        window.onscroll = () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('bg-primary');
+            } else {
+                navbar.classList.remove('bg-primary');
+            }
+        }
+    </script>
 </body>
 </html>
