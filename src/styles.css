@@ -13,8 +13,8 @@
   }
 
   .landingpage {
-    background-image: url('../img/Musicimg1.png');
+    background-image: url('../img/musicimg2.png');
     background-size: fit;
-    background-blend-mode: multiply;
-    background-color: rgb(111, 108, 108);
+    /* background-blend-mode: multiply;
+    background-color: rgb(111, 108, 108); */
   }
