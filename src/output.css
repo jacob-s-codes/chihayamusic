@@ -681,6 +681,11 @@ video {
        column-gap: 16rem;
 }
 
+.gap-x-32 {
+  -moz-column-gap: 8rem;
+       column-gap: 8rem;
+}
+
 .rounded-md {
   border-radius: 0.375rem;
 }
@@ -763,6 +768,10 @@ video {
 
 .pt-12 {
   padding-top: 3rem;
+}
+
+.pr-12 {
+  padding-right: 3rem;
 }
 
 .text-left {
@@ -882,4 +891,9 @@ video {
 .hover\:text-yellowcolor:hover {
   --tw-text-opacity: 1;
   color: rgb(229 232 182 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-deepblue:hover {
+  --tw-text-opacity: 1;
+  color: rgb(88 105 148 / var(--tw-text-opacity, 1));
 }
