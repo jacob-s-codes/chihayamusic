@@ -18,3 +18,10 @@
     background-blend-mode: multiply;
     background-color: rgb(209, 207, 207);
   }
+
+  .musicBackground {
+    background-image: url('../img/musicimg4.png');
+    background-size: fit;
+    background-blend-mode: multiply;
+    background-color: rgb(108, 106, 106);
+  }
