@@ -1315,6 +1315,9 @@
   .justify-items-stretch {
     justify-items: stretch;
   }
+  .gap-x-2 {
+    column-gap: calc(var(--spacing) * 2);
+  }
   .gap-x-10 {
     column-gap: calc(var(--spacing) * 10);
   }
@@ -1328,6 +1331,9 @@
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 1;
     }
+  }
+  .gap-y-4 {
+    row-gap: calc(var(--spacing) * 4);
   }
   .space-x-reverse {
     :where(& > :not(:last-child)) {
@@ -2418,6 +2424,16 @@
       @media (hover: hover) {
         color: var(--color-yellowcolor);
       }
+    }
+  }
+  .sm\:gap-x-4 {
+    @media (width >= 40rem) {
+      column-gap: calc(var(--spacing) * 4);
+    }
+  }
+  .md\:gap-x-12 {
+    @media (width >= 48rem) {
+      column-gap: calc(var(--spacing) * 12);
     }
   }
   .lg\:mx-0 {
