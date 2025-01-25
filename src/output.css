@@ -1755,6 +1755,9 @@
   .pt-12 {
     padding-top: calc(var(--spacing) * 12);
   }
+  .pr-8 {
+    padding-right: calc(var(--spacing) * 8);
+  }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
   }
@@ -1766,6 +1769,9 @@
   }
   .pb-24 {
     padding-bottom: calc(var(--spacing) * 24);
+  }
+  .pl-8 {
+    padding-left: calc(var(--spacing) * 8);
   }
   .text-center {
     text-align: center;
